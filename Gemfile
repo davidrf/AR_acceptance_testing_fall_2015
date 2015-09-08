@@ -4,7 +4,6 @@ gem 'pg'
 gem 'rake'
 gem 'sinatra'
 gem 'sinatra-activerecord'
-gem 'sinatra-flash'
 
 group :test, :development do
   gem 'pry'
