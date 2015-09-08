@@ -2,7 +2,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: fantasy_football_development
+  database: launcher_hairdos_development
   pool: 5
   username:
   password:
@@ -11,7 +11,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: fantasy_football_test
+  database: launcher_hairdos_test
   pool: 5
   username:
   password:
