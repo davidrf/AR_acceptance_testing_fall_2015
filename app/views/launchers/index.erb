@@ -1,0 +1,10 @@
+<h1>Launcher List</h1>
+<ul>
+  <% launchers.each do |launcher| %>
+    <li>
+      <a href="/launchers/<%= launcher.id %>">
+        <%= launcher.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>

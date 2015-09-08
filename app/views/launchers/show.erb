@@ -1,0 +1,22 @@
+<h1><%= launcher.name %></h1>
+<h2><%= launcher.hairdo %></h2>
+<h2><%= launcher.overall_rating %></h2>
+<ul>
+  <% launcher.ratings.each do |rating| %>
+    <li>
+      <p><%= rating.body %></p>
+      <p><%= rating.user %></p>
+    </li>
+  <% end %>
+</ul>
+
+
+<form action="/launchers/<%= launcher.id %>/ratings" method="post">
+  <label for="rating_body">Body</label>
+  <input type="text" name="rating[body]" id="rating_body" />
+
+  <label for="rating_user">Rating by</label>
+  <input type="text" name="rating[user]" id="rating_user" />
+
+  <input type="submit" value="Submit"/>
+</form>
